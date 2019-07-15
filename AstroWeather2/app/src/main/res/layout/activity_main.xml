@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:text="Time"
+        android:textSize="24sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/timer"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+
+</RelativeLayout>
